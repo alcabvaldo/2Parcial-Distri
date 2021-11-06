@@ -69,7 +69,7 @@ public class PersonaRESTService {
         	log.info("obtenerPorId " + cedula + " no encontrado.");
             throw new WebApplicationException(Response.Status.NOT_FOUND);
         }
-        log.info("obtenerPorId " + cedula + " encontrada: " + p.getNombre());
+        log.info("obtenerPorId " + cedula + " encontrada: " + p.getNombre()+" Modificado por Alejandro Cabral");////////////////
         return p;
     }
 
@@ -82,7 +82,7 @@ public class PersonaRESTService {
         	log.info("obtenerPorId " + cedula + " no encontrado.");
             throw new WebApplicationException(Response.Status.NOT_FOUND);
         }
-        log.info("obtenerPorId " + cedula + " encontrada: " + p.getNombre());
+        log.info("obtenerPorId " + cedula + " encontrada: " + p.getNombre()+" Modificado por Alejandro Cabral");////////////////////
         return p;
     }
 
@@ -104,7 +104,7 @@ public class PersonaRESTService {
             // Create an "ok" response
             
             //builder = Response.ok();
-            builder = Response.status(201).entity("Persona creada exitosamente");
+            builder = Response.status(201).entity("Persona creada exitosamente, Modificado por Alejandro Cabral");///////////////////////
             
         } catch (SQLException e) {
             // Handle the unique constrain violation
@@ -133,7 +133,7 @@ public class PersonaRESTService {
 			   builder = Response.status(Response.Status.NOT_ACCEPTABLE).entity("Persona no existe.");
 		   }else {
 			   personaService.borrar(cedula);
-			   builder = Response.status(202).entity("Persona borrada exitosamente.");			   
+			   builder = Response.status(202).entity("Persona borrada exitosamente. Modificado por Alejandro Cabral");			   
 		   }
 		   
 
